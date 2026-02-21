@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu de comida china en Restaurante">
+    <title>Menú Chino - Restaurante</title>
+
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../Styles/stylesC.CSS">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sección China</h1>
+        <p>Sabores del mundo en Cholula, Puebla</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="ComidaItaliana.html">Italia</a></li>
+                <li><a href="comidaJaponesa.html">Japón</a></li>
+                <li><a href="ComidaMexicana.html">México</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Menu de Comida China</h2>
+            <p>Disfruta de sabores: arroz frito, pollo kung pao, chow mein y dim sum preparados con ingredientes frescos.</p>
+            <img src="../Imagenes/imgChino/comidachina.jpg" alt="Variedad de platillos chinos en mesa con palillos">
+        </section>
+
+        <section id="platillos">
+            <h2>Platillos Destacados</h2>
+
+            <div class="platillos-container">
+                <article class="platillo">
+                    <img src="../Imagenes/imgChino/Arrozfrito.jpg" alt="Arroz frito chino con pollo y verduras">
+                    <h3>Arroz Frito con Pollo y Verduras</h3>
+                    <p class="precio">$110 MXN</p>
+                    <p>Arroz salteado con pollo, huevo, zanahoria, chicharos y cebolla china.</p>
+                </article>
+
+                <article class="platillo">
+                    <img src="../Imagenes/imgChino/pollokungpao.jpg" alt="Pollo kung pao con cacahuates y chiles">
+                    <h3>Pollo Kung Pao</h3>
+                    <p class="precio">$130 MXN</p>
+                    <p>Pollo salteado con cacahuates, chiles secos y pimientos en salsa agridulce-picante.</p>
+                </article>
+
+                <article class="platillo">
+                    <img src="../Imagenes/imgChino/chowmein.jpg" alt="Chow mein de carne con vegetales">
+                    <h3>Chow Mein de Carne</h3>
+                    <p class="precio">$125 MXN</p>
+                    <p>Fideos salteados con tiras de res, repollo, zanahoria y brotes de soya.</p>
+                </article>
+
+                <article class="platillo">
+                    <img src="../Imagenes/imgChino/dimsum.jpg" alt="Dim sum variado al vapor">
+                    <h3>Dim Sum Variado</h3>
+                    <p class="precio">$140 MXN (porción mixta)</p>
+                    <p>Seleccion de dumplings al vapor, bao rellenos y rollitos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <h2>Reserva tu Mesa</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha de la reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div>
+                    <label for="hora">Hora aproximada:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div>
+                    <label for="personas">Numero de personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" max="20" value="2" required>
+                </div>
+
+                <div>
+                    <label for="comentarios">Comentarios o preferencias:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Alergias, ocasión especial..."></textarea>
+                </div>
+
+                <div class="botones">
+                    <input type="submit" value="Enviar Reserva">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <aside>
+        <h3>Otras recomendaciones chinas</h3>
+        <ul>
+            <li>Mapo Tofu (picante)</li>
+            <li>Pato a la pekinesa</li>
+            <li>Wantanes fritos</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p><small>&copy; 2026 Restaurante, todos los derechos reservados.</small></p>
+    </footer>
+
+</body>
+</html>

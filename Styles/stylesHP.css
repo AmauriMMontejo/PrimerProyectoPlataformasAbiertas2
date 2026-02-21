@@ -1,0 +1,142 @@
+/*
+   ESTILOS GENERALES
+   Proyecto: Sabores del Mundo
+   Descripción: Estilos base para la página principal
+   */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/*
+   HEADER Y NAVEGACIÓN
+   Uso de Flexbox para distribución horizontal*/
+
+.header {
+  background-color: #222;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.nav__logo {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+/*
+   HERO SECTION
+   Flexbox para alinear texto e imagen*/
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+  gap: 30px;
+}
+
+.hero__content {
+  width: 50%;
+}
+
+.hero__title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero__text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero__image {
+  width: 45%;
+  max-width: 450px;
+  border-radius: 8px;
+}
+
+/*
+   MENÚS
+   Flexbox para tarjetas de menú*/
+
+.menus {
+  padding: 40px;
+}
+
+.menus__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.menus__container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.menus__card {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 23%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.menus__name {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.menus__img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.menus__description {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 14px;
+}

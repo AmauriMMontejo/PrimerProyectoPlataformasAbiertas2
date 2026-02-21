@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Italiana</title>
+    <!-- aqui conecto el archivo de estilos -->
+    <link rel="stylesheet" href="../Styles/stylesI.css">
+    <link rel="stylesheet" href="../normalize.css">
+</head>
+<body>
+
+    <!-- encabezado de la pagina -->
+    <div id="encabezado">
+        <h1>Sección Italiana</h1>
+        <p>Auténtica cocina italiana</p>
+        
+        <!-- menu de navegacion -->
+        <div id="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+
+    <!-- contenido principal -->
+    <div id="contenido">
+        
+        <!-- seccion de bienvenida -->
+        <div id="inicio">
+            <h2>Bienvenidos</h2>
+            <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800" alt="Restaurante italiano">
+            <p>Descubre los auténticos sabores de Italia en cada platillo.</p>
+        </div>
+
+        <!-- secion del menu -->
+        <div id="menu">
+            <h2>Nuestro Menú</h2>
+            
+            <!-- entradas -->
+            <div class="categoria">
+                <h3>Antipasti - Entradas</h3>
+                <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600" alt="Bruschetta">
+                
+                <div class="platillo">
+                    <h4>Bruschetta al Pomodoro</h4>
+                    <p>Pan tostado con tomates frescos y albahaca</p>
+                    <p><strong>Precio:</strong> $120</p>
+                </div>
+
+                <div class="platillo">
+                    <h4>Caprese</h4>
+                    <p>Mozzarella fresca, tomate y albahaca</p>
+                    <p><strong>Precio:</strong> $150</p>
+                </div>
+            </div>
+
+            <!-- pastas -->
+            <div class="categoria">
+                <h3>Primi Piatti - Pastas</h3>
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600" alt="Pasta carbonara">
+                
+                <div class="platillo">
+                    <h4>Spaghetti alla Carbonara</h4>
+                    <p>Pasta con pancetta, huevo y parmesano</p>
+                    <p><strong>Precio:</strong> $220</p>
+                </div>
+
+                <div class="platillo">
+                    <h4>Fettuccine Alfredo</h4>
+                    <p>Pasta en salsa cremosa de mantequilla</p>
+                    <p><strong>Precio:</strong> $210</p>
+                </div>
+
+                <div class="platillo">
+                    <h4>Lasagna alla Bolognese</h4>
+                    <p>Lasagna tradicional con salsa boloñesa</p>
+                    <p><strong>Precio:</strong> $250</p>
+                </div>
+            </div>
+
+            <!-- pizzas -->
+            <div class="categoria">
+                <h3>Pizza</h3>
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza italiana">
+                
+                <div class="platillo">
+                    <h4>Pizza Margherita</h4>
+                    <p>Salsa de tomate, mozzarella y albahaca</p>
+                    <p><strong>Precio:</strong> $200</p>
+                </div>
+
+                <div class="platillo">
+                    <h4>Pizza Quattro Formaggi</h4>
+                    <p>Cuatro quesos italianos</p>
+                    <p><strong>Precio:</strong> $230</p>
+                </div>
+            </div>
+
+            <!-- postres -->
+            <div class="categoria">
+                <h3>Dolci - Postres</h3>
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600" alt="Tiramisu">
+                
+                <div class="platillo">
+                    <h4>Tiramisú</h4>
+                    <p>Postre italiano con café y mascarpone</p>
+                    <p><strong>Precio:</strong> $130</p>
+                </div>
+
+                <div class="platillo">
+                    <h4>Panna Cotta</h4>
+                    <p>Crema italiana con frutos rojos</p>
+                    <p><strong>Precio:</strong> $120</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- secion de contacto -->
+        <div id="contacto">
+            <h2>Contacto</h2>
+
+            <div>
+                <h3>Informacion</h3>
+                
+                <p><strong>Direccion:</strong></p>
+                <p>Avenida Italia 123, Ciudad de México</p>
+
+                <p><strong>Telefono:</strong></p>
+                <p>(55) 1234-5678</p>
+
+                <p><strong>Horario:</strong></p>
+                <p>Lunes a Domingo: 1:00 PM - 11:00 PM</p>
+            </div>
+
+            <!-- formulario de reservacion -->
+            <div>
+                <h3>Reservaciones</h3>
+                
+                <form action="/reservacion" method="post">
+                    
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                    <label for="fecha">Fecha:</label><br>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <label for="personas">Numero de personas:</label><br>
+                    <select id="personas" name="personas" required>
+                        <option value="">Seleccione...</option>
+                        <option value="2">2 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="6">6 personas</option>
+                    </select><br><br>
+
+                    <!-- botones -->
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

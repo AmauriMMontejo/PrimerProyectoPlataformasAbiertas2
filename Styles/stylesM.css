@@ -1,0 +1,53 @@
+/* Estos estilos solo son para el apartado exclusivo del menu mexicano */
+
+body {
+    background-color: green;
+}
+ 
+.menu {
+    padding: 80px 0;
+    background-color: white;
+}
+
+/* Encabezado */
+.menu__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu__title {
+    font-size: 2.8rem;
+    color: whitesmoke;
+}
+
+.menu__subtitle {
+    color: black;
+    font-style: italic;
+}
+
+/* Categoría */
+.menu__category {
+    width: 85%;
+    margin: 0 auto 70px auto;
+}
+
+.menu__category-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    color: red;
+}
+
+/* FLEX CONTAINER (cada platillo) */
+.menu__item {
+    display: flex;               
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20
+}

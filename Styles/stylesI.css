@@ -1,0 +1,69 @@
+/* color de fondo de toda la pagina */
+body {
+    background-color: lightgray;
+}
+
+/* encabezado de arriba */
+#encabezado {
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+/* titulo grande */
+h1 {
+    color: white;
+}
+
+/* links del menu */
+#navegacion a {
+    color: white;
+    margin: 10px;
+}
+
+/* contenido principal */
+#contenido {
+    padding: 20px;
+}
+
+/* titulos de cada seccion */
+h2 {
+    color: darkred;
+}
+
+/* subtitulos */
+h3 {
+    color: green;
+}
+
+/* las imagenes */
+img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* cada categoria del menu */
+.categoria {
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* cada platillo */
+.platillo {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* formulario */
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+/* botones */
+button {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+}
